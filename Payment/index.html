@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans & Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AI-Driven CEM</h1>
+            <ul>
+                <li>Home</li>
+                <li>Solutions</li>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Demo</li>
+                <li>Metrics</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="plans-section" class="visible">
+            <h2>Plans & Pricing</h2>
+            <p>Whether your time-saving automation needs are large or small, we're here to help you scale.</p>
+            <div class="plans">
+                <div class="plan" onclick="selectPlan('Basic')">
+                    <h3>$19/month</h3>
+                    <h4>Basic</h4>
+                    <ul>
+                        <li>5 Users</li>
+                        <li>Basic Analytics</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="plan" onclick="selectPlan('Premium')">
+                    <h3>$54/month</h3>
+                    <h4>Premium</h4>
+                    <ul>
+                        <li>20 Users</li>
+                        <li>Advanced Analytics</li>
+                        <li>Personalized Branding</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="plan" onclick="selectPlan('VIP')">
+                    <h3>$99/month</h3>
+                    <h4>VIP</h4>
+                    <ul>
+                        <li>Unlimited Users</li>
+                        <li>Unlimited Channels</li>
+                        <li>VR Training</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+            </div>
+        </section>
+        <section id="payment-section" class="hidden">
+            <h2>Payment Methods</h2>
+            <form>
+                <label><input type="radio" name="payment" value="card" checked> Debit or Credit Card</label>
+                <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+                <div class="card-details">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" placeholder="Credit Card Number" required>
+                    <input type="text" placeholder="MM / YY" required>
+                    <input type="text" placeholder="CVC" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
